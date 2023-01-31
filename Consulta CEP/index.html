@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js"
+        integrity="sha512-RUkwGPgBmjCwqXpCRzpPPmGl0LSFp9v5wXtmG41+OS8vnmXybQX5qiG5adrIhtO03irWCXl+z0Jrst6qeaLDtQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <center>
+
+        <form action="#">
+            <input type="text" id="cep" placeholder="Digite o CEP..."
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="8">
+            <button onclick="buscar()">BUSCAR</button>
+        </form>
+        <div >
+            <h2 id="error" class=""></h2>
+            <h2 id="error2" class=""></h2>
+            <div id="infos" class=""></div>
+        </div>
+
+        <div class="canal">
+            <h2>Escreva-se no meu canal!</h2>
+            <div class="g-ytsubscribe" data-channelid="UCxlibyHwqT6yBi5tMlMcc1g" data-layout="full" data-theme="dark"
+                data-count="default" id="m"></div>
+            <h4>Charada Code [/] 2023 &copy; Todos direitos reservados </h4>
+        </div>
+
+    </center>
+
+
+</body>
+
+</html>
